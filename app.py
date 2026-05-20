@@ -72,7 +72,7 @@ def get_conversation_messages(conv_id: int):
 
 def chat(messages: list, conv_title: str):
     response = client.chat.completions.create(
-        model="openai/gpt-4o-mini",
+        model="openai/gpt-5.4-nano",
         messages=messages
     )
     reply = response.choices[0].message.content
